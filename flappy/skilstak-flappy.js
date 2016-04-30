@@ -96731,7 +96731,7 @@ Flappy.Play.prototype = {
     this.flappy = null;
     this.pipes = null;
     this.timer = null;
-    this.score = 1000000; 
+    this.score = 10000; 
     this.scoreText = null;
   },
 
