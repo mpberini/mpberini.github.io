@@ -20,60 +20,58 @@
 		document.write("Hey all you Batman fans!");
 	</script>
 	<script>
-	var myFunction = function () {
-		var Goodbye = document.querySelector("html");
-		Goodbye.innerHTML = "
-<html>
-<head>
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Pinyon+Script|Rock+Salt" rel="stylesheet">
-    <title> Random </title>
-</head>
-  <body>
-	    tyle>
-body {
-  font-family: cursive;
-  font-color: #FFFFFF;
-  background: #000000;
-}
-h1 {
-  font-family: Rock Salt;
-  font-color: #FFFFFF;
-} h2 {
-  font-family: Permanent Marker;
-  font-color: #FFFFFF;
-}
-</style>
-<script>
-var canvas = document.querySelector("canvas");
-canvas.width = 500;
-canvas.height = 400;
-var ctx = canvas.getContext("2d");
-var imageObj = new Image();
-imageObj.src = "https://raw.githubusercontent.com/mpberini/mpberini.github.io/master/bbbbbbbatmanConsole_log/batman_villains.jpg";
-imageObj.onload = function(){
-  ctx.drawImage(imageObj, 0, 0, 500, 400)
-ctx.font = "bold 30px Cursive";
-ctx.fillStyle = "goldenrod";
-ctx.fillText("Hi, Bats!",7,40, 90,10);
-};
-</script>
-    <br>
-    <canvas>
-    </canvas>
-    <h1>
-    Hey there, Bats! Its your best friend, Joker! See what Eddie did? Invisible ink! Fantastic, hm? Anyways, I was thinkin about the other day and thought of another really great joke! Meet me at the clock tower in Founders Island to hear it!
-    </h1>
-    <h2>
-    Riddler, here! This is a secret message just for you, Detective! Ive got another riddle waiting at Panessa Studios for you, and I consider this one to be one of my finest works! Im looking forward to seeing you there!
-    </h2>
-    <h3>
-	Hi, Bats! Its me, Harley! Remember me? Ha! Like you could ever forget me with what happened last night! Have I mentioned how great of a kisser you are? Oops, your girlfriend isnt there, is she? She probably wouldnt like that...
-    </h3>
-  </body>
-</html>"
-	</script>
-	<br><br><br>
-	<button onclick= i am no hero./>
+	function changePage() {
+      var h1 = document.querySelector("h1");
+        h1.innerHTML = <html>
+          <head>
+                <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Pinyon+Script|Rock+Salt" rel="stylesheet">
+                    <title> Random </title>
+                  </head>
+                    <body>
+                            style>
+                            body {
+                              font-family: cursive;
+                                font-color: #FFFFFF;
+                                  background: #000000;
+                                  }
+                                  h1 {
+                                    font-family: Rock Salt;
+                                      font-color: #FFFFFF;
+                                      } h2 {
+                                        font-family: Permanent Marker;
+                                          font-color: #FFFFFF;
+                                          }
+                                        </style>
+                                        <script>
+                                          var canvas = document.querySelector("canvas");
+                                          canvas.width = 500;
+                                          canvas.height = 400;
+                                          var ctx = canvas.getContext("2d");
+                                          var imageObj = new Image();
+                                          imageObj.src = "https://raw.githubusercontent.com/mpberini/mpberini.github.io/master/bbbbbbbatmanConsole_log/batman_villains.jpg";
+                                          imageObj.onload = function(){
+                                            ctx.drawImage(imageObj, 0, 0, 500, 400)
+                                            ctx.font = "bold 30px Cursive";
+                                            ctx.fillStyle = "goldenrod";
+                                            ctx.fillText("Hi, Bats!",7,40, 90,10);
+                                            };
+                                          </script>
+                                              <br>
+                                                  <canvas>
+                                                        </canvas>
+                                                            <h1>
+                                                                  Hey there, Bats! Its your best friend, Joker! See what Eddie did? Invisible ink! Fantastic, hm? Anyways, I was thinkin about the other day and thought of another really great joke! Meet me at the clock tower in Founders Island to hear it!
+                                                                      </h1>
+                                                                          <h2>
+                                                                                Riddler, here! This is a secret message just for you, Detective! Ive got another riddle waiting at Panessa Studios for you, and I consider this one to be one of my finest works! Im looking forward to seeing you there!
+                                                                                    </h2>
+                                                                                        <h3>                                                                                Hi, Bats! Its me, Harley! Remember me? Ha! Like you could ever forget me with what happened last night! Have I mentioned how great of a kisser you are? Oops, your girlfriend isnt there, is she? She probably wouldnt like that...
+                                                                                             </h3>
+                                                                                                  </body>
+                                                                                                </html>                                                              </script>
+                                      <br><br><br>
+                                      <button onclick= "changePage"> I am no hero.</button>
+ }
 
 </body>
 </html>
