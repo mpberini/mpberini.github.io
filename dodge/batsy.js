@@ -25,7 +25,7 @@ class Boot {
 class Load {
   preload() {
     console.log("Loading...");
-    this.load.image("bg",C.bg.file");
+    this.load.image("bg",C.bg.file);
   }
   create () {
     console.log("Loading Complete.");
