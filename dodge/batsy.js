@@ -5,7 +5,7 @@ var C = {
   },
   "bg": {
     "width": 320,
-    "height": 568,
+    "height": 1080,
     "xspeed": 0,
     "yspeed": 500,
     "file": "background.png"
@@ -34,8 +34,8 @@ class Load {
 class Play {
   create() {
     console.log("Entered Play State");
-    this.add.tileSprite(0,0,C.bg.width,C.bg.height,"bg");
-    this.background.autoScroll(C.bg.xspeed,C.bg.yspeed);
+    this.bg = this.add.tileSprite(0,0,C.bg.width,C.bg.height,"bg");
+    this.bg.background.autoScroll(C.bg.xspeed,C.bg.yspeed);
   }
 }
 
