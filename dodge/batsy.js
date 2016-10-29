@@ -29,6 +29,7 @@ class Load {
   }
   create () {
     console.log("Loading Complete.");
+    this.state.start("Play");
   }
 }
 class Play {
