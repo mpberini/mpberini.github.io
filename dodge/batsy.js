@@ -6,7 +6,7 @@ var C = {
   "bg": {
     "width": 320,
     "height": 568,
-    "xspeed"; 0,
+    "xspeed": 0,
     "yspeed": 500,
     "file": "background.png"
   }
