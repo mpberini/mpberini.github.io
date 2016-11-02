@@ -5,7 +5,7 @@ var C = {
   },
   "bg": {
     "width": 320,
-    "height": 1080,
+    "height": 1704,
     "xspeed": 0,
     "yspeed": 500,
     "file": "background.png"
