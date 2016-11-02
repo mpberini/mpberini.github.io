@@ -40,6 +40,9 @@ class Play {
   }
 }
 
+function restart() {
+  game.state.start("boot");
+}
 var game = new Phaser.Game(C.game.width,C.game.height);
 game.state.add("Boot",Boot);
 game.state.add("Load",Load);
