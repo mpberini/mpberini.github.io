@@ -17,7 +17,8 @@ var C = {
     "frames":2,
     "fps":2,
     "startx": 160,
-    "starty": 500
+    "starty": 500,
+    "speed": 5
   },
   "d": {
     "file": "batarang.png",
@@ -70,10 +71,16 @@ class Play {
     this.batarang.scale.set(1);
     this.batarang.animations.add("anim");
     this.batarang.animations.play("anim",C.d.fps,true);
+    this.cursors = this.input.keyboard.createCursorKeys();
   }
 
   update() {
-    console.log("Play.update() called.");
+    if(this.cursors.left.isDown) {
+      this.player.x -= C.p.speed;
+    }
+    if (this.cursors.right.isDown) {
+      this.player.x += C.p.speed;
+    }
   }
 }
 function restart() {
