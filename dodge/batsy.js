@@ -19,6 +19,15 @@ var C = {
     "startx": 160,
     "starty": 500
   }
+  "d": {
+    "file": "batarang.png",
+    "width": 64,
+    "height": 29,
+    "frames": 5,
+    "fps": 10,
+    "startx": 160,
+    "starty": 32
+  }
 }
 
 class Boot {
@@ -37,6 +46,7 @@ class Load {
     console.log("Loading...");
     this.load.image("bg",C.bg.file);
     this.load.spritesheet("player",C.p.file,C.p.width,C.p.height,C.p.frames);
+    this.load.spritesheet("batarang",C.d.file,C.d.width,C.d.height,C.d.frames);
   }
   create () {
     console.log("Loading Complete.");
@@ -54,6 +64,12 @@ class Play {
     this.player.scale.set(1);
     this.player.animations.add("anim");
     this.player.animations.play("anim",C.p.fps,true);
+    this.batarang = this.add.sprite(C.d.startx,C.d.starty,"batarang");
+    this.batarang.anchor.set(0.5,0.5);
+    this.batarang.smoothed = false;
+    this.batarang.scale.set(1);
+    this.dodge.animations.add("anim");
+    this.dodge.animations.play("anim",C.d.fps,true);
   }
 }
 
