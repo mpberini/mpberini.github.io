@@ -72,7 +72,9 @@ class Play {
     this.batarang.animations.play("anim",C.d.fps,true);
   }
 }
-
+update() {
+  console.log("Play.update() called.");
+}
 function restart() {
   game.state.start("boot");
 }
