@@ -53,7 +53,7 @@ class Play {
     this.player.smoothed = false;
     this.player.scale.set(1);
     this.player.animations.add("anim");
-    this.player.animations.play("anim,C.p.fps,true);
+    this.player.animations.play("anim",C.p.fps,true);
   }
 }
 
