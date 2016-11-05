@@ -9,8 +9,15 @@ var C = {
     "xspeed": 0,
     "yspeed": 500,
     "file": "background.png"
+  },
+  "p": {
+    "file": "player.png",
+    "width": 46,
+    "height": 64,
+    "frames": 1
   }
 }
+
 class Boot {
   preload() {
    this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
@@ -26,6 +33,7 @@ class Load {
   preload() {
     console.log("Loading...");
     this.load.image("bg",C.bg.file);
+    this.load.spritesheet("player",C.p.file,C.p.width,C.p.height,C.p.frames);
   }
   create () {
     console.log("Loading Complete.");
