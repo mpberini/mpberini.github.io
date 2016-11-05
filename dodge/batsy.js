@@ -18,7 +18,7 @@ var C = {
     "fps":2,
     "startx": 160,
     "starty": 500
-  }
+  },
   "d": {
     "file": "batarang.png",
     "width": 64,
