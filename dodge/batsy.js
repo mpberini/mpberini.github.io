@@ -14,7 +14,7 @@ var C = {
     "file": "player.png",
     "width": 46,
     "height": 64,
-    "frames": 1
+    "frames":2
   }
 }
 
