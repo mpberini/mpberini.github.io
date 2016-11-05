@@ -68,8 +68,8 @@ class Play {
     this.batarang.anchor.set(0.5,0.5);
     this.batarang.smoothed = false;
     this.batarang.scale.set(1);
-    this.dodge.animations.add("anim");
-    this.dodge.animations.play("anim",C.d.fps,true);
+    this.batarang.animations.add("anim");
+    this.batarang.animations.play("anim",C.d.fps,true);
   }
 }
 
