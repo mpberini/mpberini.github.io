@@ -84,7 +84,12 @@ class Play {
     }
     if (this.batarang.y > this.game.height) {
       this.batarang.y = C.d.starty;
-      this.batarang.x = randInt(C.game.width);
+      let px = (C.d.width * this.batarang.scale.x) / 3;
+      let max = C.game.width - px;
+      let min = 0 +px;
+      let newx = randInt(max);
+      if (newx < min) { newx = min}
+      this.batarang.x = newx;
     }
     this.batarang.y+= C.d.speed;
     
