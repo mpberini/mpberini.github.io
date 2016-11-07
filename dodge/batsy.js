@@ -107,4 +107,4 @@ var game = new Phaser.Game(C.game.width,C.game.height);
 game.state.add("Boot",Boot);
 game.state.add("Load",Load);
 game.state.add("Play",Play);
-game.state.start("Boot");
+game.state.start("Boot")
