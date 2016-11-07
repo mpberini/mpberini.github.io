@@ -46,7 +46,7 @@ class Boot {
 class Load {
   preload() {
     console.log("Loading...");
-    this.load.image("bg",C.bg.file);
+    his.load.image("bg",C.bg.file);
     this.load.spritesheet("player",C.p.file,C.p.width,C.p.height,C.p.frames);
     this.load.spritesheet("batarang",C.d.file,C.d.width,C.d.height,C.d.frames);
   }
@@ -107,4 +107,4 @@ var game = new Phaser.Game(C.game.width,C.game.height);
 game.state.add("Boot",Boot);
 game.state.add("Load",Load);
 game.state.add("Play",Play);
-game.state.start("Boot", Boot);
+game.state.start("Boot");
