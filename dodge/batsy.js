@@ -28,7 +28,7 @@ var C = {
     "fps": 10,
     "startx": 160,
     "starty": 32,
-    "speed": 5
+    "speed": 15
   }
 }
 
@@ -82,7 +82,11 @@ class Play {
     if (this.cursors.right.isDown) {
       this.player.x += C.p.speed;
     }
+    if (this.batarang.y > this.game.height) {
+      this.dodge.y = C.d.starty;
+    }
     this.batarang.y+= C.d.speed;
+    
   }
   
   render() {
