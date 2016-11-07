@@ -97,7 +97,7 @@ class Play {
   render() {
     game.debug.text("x: " + this.batarang.x + ", y: " + this.batarang.y, 4, 16);
   }
-}
+
 function restart() {
   game.state.start("boot");
 }
