@@ -27,7 +27,7 @@ var C = {
     "frames": 5,
     "fps": 10,
     "startx": 160,
-    "starty": 32,
+    "starty": -32,
     "speed": 15
   }
 }
@@ -83,7 +83,8 @@ class Play {
       this.player.x += C.p.speed;
     }
     if (this.batarang.y > this.game.height) {
-      this.dodge.y = C.d.starty;
+      this.batarang.y = C.d.starty;
+      this.dodge.x = randInt(C.game.width);
     }
     this.batarang.y+= C.d.speed;
     
