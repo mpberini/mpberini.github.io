@@ -84,7 +84,7 @@ class Play {
     }
     if (this.batarang.y > this.game.height) {
       this.batarang.y = C.d.starty;
-      this.dodge.x = randInt(C.game.width);
+      this.batarang.x = randInt(C.game.width);
     }
     this.batarang.y+= C.d.speed;
     
