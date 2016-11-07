@@ -96,6 +96,8 @@ class Play {
 function restart() {
   game.state.start("boot");
 }
+function randInt(max) {
+  return Math.floor(Math.random() * max);
 var game = new Phaser.Game(C.game.width,C.game.height);
 game.state.add("Boot",Boot);
 game.state.add("Load",Load);
