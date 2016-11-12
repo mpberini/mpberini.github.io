@@ -1,4 +1,4 @@
-while(true) {
+
 var C = {
   "game": {
     "width":320,
@@ -110,4 +110,4 @@ game.state.add("Boot",Boot);
 game.state.add("Load",Load);
 game.state.add("Play",Play);
 game.state.start("Boot");
-}
+
