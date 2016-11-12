@@ -92,12 +92,8 @@ class Play {
     }
     this.batarang.y+= C.d.speed;
     if (checkOverlap(this.player, this.batarang)) {
-      text.text = 'Drag the sprites. Overlapping: true';
+      restart();
       }
-   else {
-     text.text = 'Drag the sprites. Overlapping: false';
-   }
-    
   }
   
   render() {
