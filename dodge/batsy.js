@@ -1,4 +1,4 @@
-
+"use strict";
 var C = {
   "game": {
     "width":320,
@@ -8,7 +8,7 @@ var C = {
     "width": 320,
     "height": 1704,
     "xspeed": 0,
-    "yspeed": 500,
+    "yspeed": 400,
     "file": "background.png"
   },
   "p": {
@@ -19,6 +19,7 @@ var C = {
     "fps":2,
     "startx": 160,
     "starty": 500,
+    "bounce": 0.3,
     "speed": 5
   },
   "d": {
@@ -90,6 +91,12 @@ class Play {
       this.batarang.x = randInt(px,max);
     }
     this.batarang.y+= C.d.speed;
+    if (checkOverlap(player, batarang)) {
+      text.text = 'Drag the sprites. Overlapping: true';
+      }
+   else {
+     text.text = 'Drag the sprites. Overlapping: false';
+   }
     
   }
   
@@ -98,10 +105,15 @@ class Play {
   }
 }
 function restart() {
-  game.state.start("boot");
+  game.state.start("Boot");
 }
 function randInt(min,max) {
   return Math.floor(Math.random() * (max - min) + min);
+}
+function checkOverlap(player, batarang) {
+  var boundsA = player.getBounds();
+  var boundsB = batarang.getbounds();
+  return Phaser.Rectangle.intersects(boundsA, boundsB);
 }
 var game = new Phaser.Game(C.game.width,C.game.height);
 game.state.add("Boot",Boot);
