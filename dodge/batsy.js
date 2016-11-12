@@ -88,8 +88,6 @@ class Play {
       let px = (C.d.width * this.batarang.scale.x) / 2;
       let max = C.game.width - px;
       this.batarang.x = randInt(px,max);
-      if (newx < min) { newx = min}
-      this.batarang.x = newx;
     }
     this.batarang.y+= C.d.speed;
     
