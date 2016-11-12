@@ -112,7 +112,7 @@ function randInt(min,max) {
 }
 function checkOverlap(player, batarang) {
   var boundsA = player.getBounds();
-  var boundsB = batarang.getbounds();
+  var boundsB = batarang.getBounds();
   return Phaser.Rectangle.intersects(boundsA, boundsB);
 }
 var game = new Phaser.Game(C.game.width,C.game.height);
